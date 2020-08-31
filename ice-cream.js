@@ -8,6 +8,6 @@ console.log(iceCreamFlavours);
 console.log(iceCreamFlavours[0]);
 let last = iceCreamFlavours.length;
 console.log(iceCreamFlavours[last - 1]);
-
+console.log(last)
 
 
