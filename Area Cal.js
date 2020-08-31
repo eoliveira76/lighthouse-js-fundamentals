@@ -2,7 +2,7 @@ function calculateRectangleArea (lenght, width) {
   let ans = lenght * width;
   if (ans < 0 || isNaN(ans)){
     return 'undefined';
-  }else if (lenght < 0 || width < 0) {
+  }else if (lenght <= 0 || width <= 0) {
     return 'undefined';
   } 
   else {
@@ -14,7 +14,7 @@ function calculateTriangleArea (base, height) {
   let ans = base * height / 2;
   if (ans < 0 || isNaN(ans)){
     return 'undefined';
-  }else if (base < 0 || height < 0) {
+  }else if (base <= 0 || height <= 0) {
     return 'undefined';
   } else {
     return ans;
@@ -23,9 +23,9 @@ function calculateTriangleArea (base, height) {
 
 function calculateCircleArea (radius){
   let ans = Math.PI * (radius * radius);
-  if (ans < 0 || isNaN(ans)) {
+  if (ans < 0) {
     return 'undefined';
-  }else if (radius < 0) {
+  }else if (radius <= 0) {
     return 'undefined';
   }else {
     return ans;
