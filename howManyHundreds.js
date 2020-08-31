@@ -8,10 +8,8 @@ function howManyHundreds(num) {
   }else {
     ans = num / 100
   }
-  return ans
-  }
-
-
+  return ans;
+}
 
 console.log(howManyHundreds(1000), "=?", 10);
 console.log(howManyHundreds(894), "=?", 8);
