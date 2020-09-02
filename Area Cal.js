@@ -1,13 +1,12 @@
 function calculateRectangleArea (lenght, width) {
-  let ans = lenght * width;
-  if (ans < 0 || isNaN(ans)){
-    return 'undefined';
-  }else if (lenght <= 0 || width <= 0) {
-    return 'undefined';
-  } 
-  else {
-    return ans;
+  let ans = 0;
+  let bad = "undefined";
+  if (lenght < 0 || width < 0) {
+    return bad;
+  }else {
+    return (lenght * width); 
   }
+ 
 }
 
 function calculateTriangleArea (base, height) {
